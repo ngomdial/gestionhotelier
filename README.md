@@ -1,4 +1,4 @@
-# GestionContact daily-build 6
+# GestionContact daily-build 7
 
 Projet de gestion d'un carnet de contacts (Spring/Hibernate/J2EE/...) de l'UE CODEL de M2 SAR (UPMC - Jussieu - Paris 6)
 
