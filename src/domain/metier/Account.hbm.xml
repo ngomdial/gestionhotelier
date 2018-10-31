@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="domain.metier">
+  <class name="Account" table="Account_Table">
+ 	 <cache usage="read-write"/>
+  	 <id name="id" type="long" column="ID_ACCOUNT" >
+   		<generator class="increment"/>
+  	 </id>
+  	 <version name="version" access="field" column="version"/>
+	<property name="login">
+  	 	<column name="LOGIN"/>
+  	 </property>
+  	 
+  	 <property name="pwd">
+  	 	<column name="PWD"/>
+  	 </property>
+
+<!--  	<set name="contacts" inverse="true">
+		<key column="ID_CONTACT" />
+		<one-to-many class="Contact" />
+	</set>
+	-->
+  </class>
+</hibernate-mapping>
